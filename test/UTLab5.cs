@@ -9,7 +9,7 @@ using DHKTPM18ATT_Tong_Phuc_Long_TienPhat.program;
 namespace DHKTPM18ATT_Tong_Phuc_Long_TienPhat.test
 {
     [TestClass]
-    public class UTLab5
+    public class UTLab5Test
     {
         public TestContext TestContext { get; set; }
 
@@ -27,7 +27,7 @@ namespace DHKTPM18ATT_Tong_Phuc_Long_TienPhat.test
             int p = Convert.ToInt32(TestContext.DataRow["p"]);
             string expected = TestContext.DataRow["ExpectedResult"].ToString();
 
-            string actual = Program.HuyChuoi(input, n, p);
+            string actual = HuyChuoiProgram.HuyChuoi(input, n, p);
             Assert.AreEqual(expected, actual);
 
         }
