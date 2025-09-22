@@ -52,12 +52,17 @@
   <ItemGroup>
     <Compile Include="program\HuyChuoi.cs" />
     <Compile Include="program\Max.cs" />
+<<<<<<< HEAD
     <Compile Include="program\Sum.cs" />
     <Compile Include="program\TinhTienDien.cs" />
+=======
+    <Compile Include="program\ReplaceString.cs" />
+>>>>>>> c51bfd7 (add UTLab06)
     <Compile Include="test\UTLab1.cs" />
     <Compile Include="test\UTLab4.cs" />
     <Compile Include="test\UTLab3.cs" />
     <Compile Include="test\UTLab5.cs" />
+    <Compile Include="test\UTLab6.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -70,6 +75,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="data\UTLab05.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="data\UTLab06.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />

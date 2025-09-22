@@ -29,6 +29,7 @@ D:\HK1_Nam4\dam_Bao_Chat_Luong_Va_Kiem_Thu\DBCL_DanhThue\DanhThue\obj\Debug\DHKT
 D:\HK1_Nam4\dam_Bao_Chat_Luong_Va_Kiem_Thu\DBCL_DanhThue\DanhThue\obj\Debug\DHKTPM18ATT_Tong_Phuc_Long_TienPhat.dll
 D:\HK1_Nam4\dam_Bao_Chat_Luong_Va_Kiem_Thu\DBCL_DanhThue\DanhThue\obj\Debug\DHKTPM18ATT_Tong_Phuc_Long_TienPhat.pdb
 D:\HK1_Nam4\dam_Bao_Chat_Luong_Va_Kiem_Thu\DBCL_DanhThue\DanhThue\bin\Debug\data\UTLab05.csv
+<<<<<<< HEAD
 C:\Users\lehuu\DBCLvKTPM\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 C:\Users\lehuu\DBCLvKTPM\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 C:\Users\lehuu\DBCLvKTPM\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
@@ -47,3 +48,6 @@ C:\Users\lehuu\DBCLvKTPM\obj\Debug\DHKTPM18ATT_Tong_Phuc_Long_TienPhat.dll
 C:\Users\lehuu\DBCLvKTPM\obj\Debug\DHKTPM18ATT_Tong_Phuc_Long_TienPhat.pdb
 C:\Users\lehuu\DBCLvKTPM\bin\Debug\data\UTLab03.csv
 C:\Users\lehuu\DBCLvKTPM\bin\Debug\data\UTLab04.csv
+=======
+D:\HK1_Nam4\dam_Bao_Chat_Luong_Va_Kiem_Thu\DBCL_DanhThue\DanhThue\bin\Debug\data\UTLab06.csv
+>>>>>>> c51bfd7 (add UTLab06)
