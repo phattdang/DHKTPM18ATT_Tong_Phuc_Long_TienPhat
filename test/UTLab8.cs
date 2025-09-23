@@ -18,13 +18,11 @@ namespace DHKTPM18ATT_Tong_Phuc_Long_TienPhat.test
         [TestMethod]
         public void TestQuickSort()
         {
-            // Lấy dữ liệu từ CSV dưới dạng string
             string input = TestContext.DataRow["list"]?.ToString() ?? "";
             string leftStr = TestContext.DataRow["left"]?.ToString() ?? "";
             string rightStr = TestContext.DataRow["right"]?.ToString() ?? "";
             string expectedStr = TestContext.DataRow["ExpectedResult"]?.ToString() ?? "";
 
-            // Xử lý mảng đầu vào
             int[] array;
             if (string.IsNullOrWhiteSpace(input) || input == "[]")
             {
@@ -32,11 +30,10 @@ namespace DHKTPM18ATT_Tong_Phuc_Long_TienPhat.test
             }
             else
             {
-                // Chuyển chuỗi list thành mảng string
                 string cleanedInput = input.Trim('[', ']').Replace(" ", "");
                 string[] stringArray = cleanedInput.Split(',');
 
-                // Kiểm tra và chuyển đổi thành mảng int
+
                 array = new int[stringArray.Length];
                 for (int i = 0; i < stringArray.Length; i++)
                 {
@@ -105,19 +102,14 @@ namespace DHKTPM18ATT_Tong_Phuc_Long_TienPhat.test
                 Assert.AreEqual(expectedStr, actualResult);
                 return;
             }
-
             try
             {
-                // Gọi QuickSort
                 QuickSort.QuickSortt(array, left, right);
-
-                // So sánh kết quả mảng
                 string actualResult = "[" + string.Join(",", array) + "]";
                 Assert.AreEqual(expectedStr, actualResult);
             }
             catch (ArgumentException ex)
             {
-                // So sánh message lỗi
                 Assert.AreEqual(expectedStr, ex.Message);
             }
         }

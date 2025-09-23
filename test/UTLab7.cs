@@ -19,7 +19,7 @@ namespace DHKTPM18ATT_Tong_Phuc_Long_TienPhat.test
         TestMethod]
         public void TestFindLargest()
         {
-            // Lấy dữ liệu từ CSVs
+            // Lấy dữ liệu từ CSV
             string input = TestContext.DataRow["list"].ToString().Trim('"');
             string expectedStr = TestContext.DataRow["ExpectedResult"].ToString();
 
@@ -53,7 +53,7 @@ namespace DHKTPM18ATT_Tong_Phuc_Long_TienPhat.test
 
             // Gọi hàm FindLargest và so sánh
             int actual = Largest.FindLargest(intArray);
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual(expected, actual, $"Failed for input {input}. Expected {expected}, but got {actual}.");
         }
     }
 }
