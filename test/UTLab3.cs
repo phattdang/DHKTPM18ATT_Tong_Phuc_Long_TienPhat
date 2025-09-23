@@ -1,5 +1,6 @@
-﻿using DHKTPM18ATT_Tong_Phuc_Long_TienPhat.program;
+﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using DHKTPM18ATT_Tong_Phuc_Long_TienPhat.program;
 using System.Globalization;
 
 namespace DHKTPM18ATT_Tong_Phuc_Long_TienPhat.test
@@ -18,7 +19,7 @@ namespace DHKTPM18ATT_Tong_Phuc_Long_TienPhat.test
         TestMethod]
         public void TestTinhTienDien()
         {
-
+           
             int chiSoCu = int.Parse(TestContext.DataRow[0].ToString().Trim(), CultureInfo.InvariantCulture);
             int chiSoMoi = int.Parse(TestContext.DataRow[1].ToString().Trim(), CultureInfo.InvariantCulture);
             double expected = double.Parse(TestContext.DataRow[2].ToString().Trim(), CultureInfo.InvariantCulture);
