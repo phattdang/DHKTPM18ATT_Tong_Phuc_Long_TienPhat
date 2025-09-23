@@ -1,0 +1,7 @@
+s1,s2,s3,ExpectedResult
+Truong dh cong nghiep,dh,dai hoc,Truong dai hoc cong nghiep
+abc,,xyz,abc
+abc,abc,, 
+abc,xyz,123,abc
+abc,a,A,Abc
+abc,c,C,abC
