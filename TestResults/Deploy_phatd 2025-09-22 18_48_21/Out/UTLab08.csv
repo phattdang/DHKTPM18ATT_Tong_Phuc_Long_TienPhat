@@ -1,0 +1,2 @@
+list,left,right,ExpectedResult
+"[5,6,2004,-21,40,-3147483649]",0,5,"Loi tai o E1 do gia tri phan tu vuot qua suc chua cua int la -2147483648"

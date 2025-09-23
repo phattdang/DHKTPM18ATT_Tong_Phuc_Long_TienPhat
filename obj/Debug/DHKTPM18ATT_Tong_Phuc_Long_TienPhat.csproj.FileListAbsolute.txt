@@ -29,3 +29,6 @@ D:\HK1_Nam4\dam_Bao_Chat_Luong_Va_Kiem_Thu\DBCL_DanhThue\DanhThue\obj\Debug\DHKT
 D:\HK1_Nam4\dam_Bao_Chat_Luong_Va_Kiem_Thu\DBCL_DanhThue\DanhThue\obj\Debug\DHKTPM18ATT_Tong_Phuc_Long_TienPhat.dll
 D:\HK1_Nam4\dam_Bao_Chat_Luong_Va_Kiem_Thu\DBCL_DanhThue\DanhThue\obj\Debug\DHKTPM18ATT_Tong_Phuc_Long_TienPhat.pdb
 D:\HK1_Nam4\dam_Bao_Chat_Luong_Va_Kiem_Thu\DBCL_DanhThue\DanhThue\bin\Debug\data\UTLab05.csv
+D:\IUH\NAM4\KI1\KTPM\btnhommodule02\DHKTPM18ATT_Tong_Phuc_Long_TienPhat\bin\Debug\data\UTLab05.csv
+D:\IUH\NAM4\KI1\KTPM\btnhommodule02\DHKTPM18ATT_Tong_Phuc_Long_TienPhat\bin\Debug\data\UTLab07.csv
+D:\IUH\NAM4\KI1\KTPM\btnhommodule02\DHKTPM18ATT_Tong_Phuc_Long_TienPhat\bin\Debug\data\UTLab08.csv
