@@ -51,27 +51,36 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="program\HuyChuoi.cs" />
-    <Compile Include="program\Largest.cs" />
     <Compile Include="program\Max.cs" />
-    <Compile Include="program\QuickSort.cs" />
-    <Compile Include="test\UTLab7.cs" />
+<<<<<<< HEAD
+    <Compile Include="program\Sum.cs" />
+    <Compile Include="program\TinhTienDien.cs" />
+=======
+    <Compile Include="program\ReplaceString.cs" />
+>>>>>>> c51bfd7 (add UTLab06)
     <Compile Include="test\UTLab1.cs" />
+    <Compile Include="test\UTLab4.cs" />
+    <Compile Include="test\UTLab3.cs" />
     <Compile Include="test\UTLab5.cs" />
+    <Compile Include="test\UTLab6.cs" />
+    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="test\UTLab8.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="data\UTLab01.csv" />
+    <Content Include="data\UTLab03.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\UTLab04.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="data\UTLab05.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="data\UTLab07.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="data\UTLab08.csv">
+    <None Include="data\UTLab06.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
-    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

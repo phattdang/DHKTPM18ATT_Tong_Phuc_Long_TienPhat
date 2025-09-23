@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DHKTPM18ATT_Tong_Phuc_Long_TienPhat.program
 {
-    public class Program
+    public class HuyChuoiProgram
     {
         public static string HuyChuoi(string s, int n, int p)
         {
