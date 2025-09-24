@@ -9,7 +9,7 @@ using DHKTPM18ATT_Tong_Phuc_Long_TienPhat.program;
 namespace DHKTPM18ATT_Tong_Phuc_Long_TienPhat.test
 {
     [TestClass]
-    public class UTLab5Test
+    public class UTLab5
     {
         public TestContext TestContext { get; set; }
 

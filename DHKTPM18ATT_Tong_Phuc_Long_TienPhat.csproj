@@ -54,10 +54,12 @@
     <Compile Include="program\Largest.cs" />
     <Compile Include="program\Max.cs" />
     <Compile Include="program\QuickSort.cs" />
+    <Compile Include="program\SolveQuadratic.cs" />
     <Compile Include="program\Sum.cs" />
     <Compile Include="program\TinhTienDien.cs" />
-    <Compile Include="program\ReplaceString.cs" />
+    <Compile Include="program\ThayThe.cs" />
     <Compile Include="test\UTLab1.cs" />
+    <Compile Include="test\UTLab2.cs" />
     <Compile Include="test\UTLab4.cs" />
     <Compile Include="test\UTLab3.cs" />
     <Compile Include="test\UTLab5.cs" />
@@ -68,13 +70,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="data\UTLab01.csv" />
     <Content Include="data\UTLab03.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="data\UTLab04.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="data\UTLab01.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="data\UTLab02.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="data\UTLab05.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
