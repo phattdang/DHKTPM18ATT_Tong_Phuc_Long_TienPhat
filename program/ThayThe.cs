@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace DHKTPM18ATT_Tong_Phuc_Long_TienPhat.program
 {
-    public class ReplaceStringProgram
+    public class ThayTheProgram
     {
         // Hàm ReplaceString
-        public static string ReplaceString(string s1, string s2, string s3)
+        public static string ThayThe(string s1, string s2, string s3)
         {
             if (string.IsNullOrEmpty(s1) && string.IsNullOrEmpty(s2) && string.IsNullOrEmpty(s3))
                 return "";

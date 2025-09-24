@@ -9,7 +9,7 @@ using DHKTPM18ATT_Tong_Phuc_Long_TienPhat.program;
 namespace DHKTPM18ATT_Tong_Phuc_Long_TienPhat.test
 {
     [TestClass]
-    public class ReplaceStringTest
+    public class UTLab6
     {
         public TestContext TestContext { get; set; }
 
@@ -20,7 +20,7 @@ namespace DHKTPM18ATT_Tong_Phuc_Long_TienPhat.test
             DataAccessMethod.Sequential),
         DeploymentItem("data\\UTLab06.csv"),
         TestMethod]
-        public void TestReplaceString()
+        public void TestThayThe()
         {
             // Lấy dữ liệu từ file CSV
             string s1 = TestContext.DataRow["s1"].ToString();
@@ -29,7 +29,7 @@ namespace DHKTPM18ATT_Tong_Phuc_Long_TienPhat.test
             string expected = TestContext.DataRow["ExpectedResult"].ToString();
 
             // Gọi hàm ReplaceString từ class ReplaceStringProgram
-            string actual = ReplaceStringProgram.ReplaceString(s1, s2, s3);
+            string actual = ThayTheProgram.ThayThe(s1, s2, s3);
 
             // So sánh kết quả
             Assert.AreEqual(expected, actual);

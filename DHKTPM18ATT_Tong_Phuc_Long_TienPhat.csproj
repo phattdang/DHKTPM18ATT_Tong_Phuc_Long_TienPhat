@@ -56,7 +56,7 @@
     <Compile Include="program\QuickSort.cs" />
     <Compile Include="program\Sum.cs" />
     <Compile Include="program\TinhTienDien.cs" />
-    <Compile Include="program\ReplaceString.cs" />
+    <Compile Include="program\ThayThe.cs" />
     <Compile Include="test\UTLab1.cs" />
     <Compile Include="test\UTLab4.cs" />
     <Compile Include="test\UTLab3.cs" />
