@@ -82,3 +82,8 @@ D:\IUH\NAM4\KI1\KTPM\btnhommodule02\DHKTPM18ATT_Tong_Phuc_Long_TienPhat\obj\Debu
 D:\IUH\NAM4\KI1\KTPM\btnhommodule02\DHKTPM18ATT_Tong_Phuc_Long_TienPhat\obj\Debug\DHKTPM18ATT_Tong_Phuc_Long_TienPhat.pdb
 D:\IUH\NAM4\KI1\KTPM\btnhommodule02\DHKTPM18ATT_Tong_Phuc_Long_TienPhat\bin\Debug\data\UTLab02.csv
 D:\IUH\NAM4\KI1\KTPM\btnhommodule02\DHKTPM18ATT_Tong_Phuc_Long_TienPhat\bin\Debug\data\UTLab01.csv
+D:\DHKTPM18ATT_Tong_Phuc_Long_TienPhat\bin\Debug\data\UTLab01.csv
+D:\DHKTPM18ATT_Tong_Phuc_Long_TienPhat\bin\Debug\data\UTLab02.csv
+D:\DHKTPM18ATT_Tong_Phuc_Long_TienPhat\bin\Debug\data\UTLab07.csv
+D:\DHKTPM18ATT_Tong_Phuc_Long_TienPhat\bin\Debug\data\UTLab08.csv
+D:\DHKTPM18ATT_Tong_Phuc_Long_TienPhat\bin\Debug\MethodLibrary.dll

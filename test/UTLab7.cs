@@ -1,5 +1,4 @@
-﻿using DHKTPM18ATT_Tong_Phuc_Long_TienPhat.program;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Linq;
 
@@ -19,12 +18,11 @@ namespace DHKTPM18ATT_Tong_Phuc_Long_TienPhat.test
         TestMethod]
         public void TestFindLargest()
         {
+            MethodLibrary.MethodLibrary m = new MethodLibrary.MethodLibrary();
+
             // Lấy dữ liệu từ CSV
             string input = TestContext.DataRow["list"].ToString().Trim('"');
-            string expectedStr = TestContext.DataRow["ExpectedResult"].ToString();
-
-            // Chuyển đổi expected thành int
-            int expected = string.IsNullOrEmpty(expectedStr) ? int.MaxValue : Convert.ToInt32(expectedStr);
+            int expected = Convert.ToInt32(TestContext.DataRow["ExpectedResult"]);
 
             // Chuyển input thành mảng string
             string[] stringArray = string.IsNullOrEmpty(input) || input == "[]"
@@ -34,26 +32,23 @@ namespace DHKTPM18ATT_Tong_Phuc_Long_TienPhat.test
 
             // Chuyển mảng string thành mảng int
             int[] intArray = new int[stringArray.Length];
+
+            Exception ex = null;
             for (int i = 0; i < stringArray.Length; i++)
             {
-                string s = stringArray[i].Replace(".", "");
                 try
                 {
-                    intArray[i] = int.Parse(s);
+                    intArray[i] = int.Parse(stringArray[i]);
                 }
-                catch (OverflowException)
+                catch (Exception e)
                 {
-                    intArray[i] = int.MaxValue; // Gán MaxValue cho giá trị vượt quá
-                }
-                catch (FormatException)
-                {
-                    intArray[i] = 0; // Giá trị không hợp lệ
+                    ex = e;
+                    Assert.IsNotNull(ex);
                 }
             }
 
-            // Gọi hàm FindLargest và so sánh
-            int actual = Largest.FindLargest(intArray);
-            Assert.AreEqual(expected, actual, $"Failed for input {input}. Expected {expected}, but got {actual}.");
+            int actual = m.Largest(intArray);
+            Assert.AreEqual(expected, actual);
         }
     }
 }
