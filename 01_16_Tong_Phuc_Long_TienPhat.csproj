@@ -55,8 +55,8 @@
   <ItemGroup>
     <Compile Include="test\UTLab1.cs" />
     <Compile Include="test\UTLab2.cs" />
-    <Compile Include="test\UTLab4.cs" />
     <Compile Include="test\UTLab3.cs" />
+    <Compile Include="test\UTLab4.cs" />
     <Compile Include="test\UTLab5.cs" />
     <Compile Include="test\UTLab6.cs" />
     <Compile Include="test\UTLab7.cs" />

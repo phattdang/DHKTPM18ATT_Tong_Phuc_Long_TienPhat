@@ -1,61 +1,75 @@
-﻿//using Microsoft.VisualStudio.TestTools.UnitTesting;
-//using System;
-//using System.Globalization;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-//namespace DHKTPM18ATT_Tong_Phuc_Long_TienPhat.test
-//{
-//    [TestClass]
-//    public class UTLab4
-//    {
-//        public TestContext TestContext { get; set; }
+namespace DHKTPM18ATT_Tong_Phuc_Long_TienPhat.test
+{
+    [TestClass]
+    public class UTLab4
+    {
+        [TestMethod]
+        public void TestSum_Input_am1()
+        {
+            MethodLibrary.MethodLibrary o = new MethodLibrary.MethodLibrary();
 
-//        [DataSource(
-//            "Microsoft.VisualStudio.TestTools.DataSource.CSV",
-//            "|DataDirectory|\\data\\UTLab04.csv",
-//            "UTLab04#csv",
-//            DataAccessMethod.Sequential)]
-//        [DeploymentItem("data\\UTLab04.csv")]
-//        [TestMethod]
-//        public void TestSum()
-//        {
+            long expectedK = 1;
+            long expectedS = 1;
+            long actualK = o.Sum(-1, out long s);
+          
+            Assert.AreEqual(expectedK, actualK, $"Sai giá trị k: mong đợi {expectedK} nhưng nhận {actualK}");
+            Assert.AreEqual(expectedS, s, $"Sai giá trị s: mong đợi {expectedS} nhưng nhận {s}");
+        }
+        [TestMethod]
+        public void TestSum_Input_am3()
+        {
+            MethodLibrary.MethodLibrary o = new MethodLibrary.MethodLibrary();
 
-//            string s0Raw = TestContext.DataRow[0].ToString().Trim();
-//            long s0 = long.Parse(s0Raw, CultureInfo.InvariantCulture);
+            long expectedK = 1;
+            long expectedS = 1;
+            long actualK = o.Sum(-3, out long s);
 
-//            string expectedRaw = TestContext.DataRow[1].ToString().Trim();
+            Assert.AreEqual(expectedK, actualK, $"Sai giá trị k: mong đợi {expectedK} nhưng nhận {actualK}");
+            Assert.AreEqual(expectedS, s, $"Sai giá trị s: mong đợi {expectedS} nhưng nhận {s}");
+        }
 
-//            string expected = expectedRaw;
-//            if (expected.StartsWith("\"") && expected.EndsWith("\"") && expected.Length >= 2)
-//            {
-//                expected = expected.Substring(1, expected.Length - 2);
-//            }
-//            expected = expected.Trim();
+        [TestMethod]
+        public void TestSum_Input_3()
+        {
+            MethodLibrary.MethodLibrary o = new MethodLibrary.MethodLibrary();
 
-//            var sumClass = new SumClass();
-//            string actual;
+            long expectedK = 3;   
+            long expectedS = 6;  
 
-//            try
-//            {
-//                long actualK = sumClass.Sum(s0, out long actualS);
+            long actualK = o.Sum(3, out long s);
 
+            Assert.AreEqual(expectedK, actualK, $"Sai giá trị k: mong đợi {expectedK} nhưng nhận {actualK}");
+            Assert.AreEqual(expectedS, s, $"Sai giá trị s: mong đợi {expectedS} nhưng nhận {s}");
+        }
+      
+        [TestMethod]
+        public void TestSum_Input_0()
+        {
+            MethodLibrary.MethodLibrary o = new MethodLibrary.MethodLibrary();
 
-//                if (actualK == -1 || actualS == -1)
-//                {
-//                    actual = "Thong bao loi: Gia tri nhap vao phai lon hon hoac bang 0";
-//                }
-//                else
-//                {
-//                    actual = $"k={actualK}, s={actualS}";
-//                }
-//            }
-//            catch (ArgumentException ex)
-//            {
+            long expectedK = 1;
+            long expectedS = 1;
 
-//                actual = "Thong bao loi: " + ex.Message;
-//            }
+            long actualK = o.Sum(0, out long s);
 
-//            Assert.AreEqual(expected, actual,
-//                $"Sai o case s0={s0}. Expected='{expected}', Actual='{actual}'");
-//        }
-//    }
-//}
+            Assert.AreEqual(expectedK, actualK, $"Sai giá trị k: mong đợi {expectedK} nhưng nhận {actualK}");
+            Assert.AreEqual(expectedS, s, $"Sai giá trị s: mong đợi {expectedS} nhưng nhận {s}");
+        }
+        [TestMethod]
+        public void TestSum_Input_1()
+        {
+            MethodLibrary.MethodLibrary o = new MethodLibrary.MethodLibrary();
+
+            long expectedK = 2;
+            long expectedS = 3;
+
+            long actualK = o.Sum(1, out long s);
+
+            Assert.AreEqual(expectedK, actualK, $"Sai giá trị k: mong đợi {expectedK} nhưng nhận {actualK}");
+            Assert.AreEqual(expectedS, s, $"Sai giá trị s: mong đợi {expectedS} nhưng nhận {s}");
+        }
+
+    }
+}
