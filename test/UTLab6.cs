@@ -28,10 +28,9 @@ namespace DHKTPM18ATT_Tong_Phuc_Long_TienPhat.test
             string s3 = TestContext.DataRow["s3"].ToString();
             string expected = TestContext.DataRow["ExpectedResult"].ToString();
 
-            // Gọi hàm ReplaceString từ class ReplaceStringProgram
-            string actual = ThayTheProgram.ThayThe(s1, s2, s3);
+            MethodLibrary.MethodLibrary o = new MethodLibrary.MethodLibrary();
 
-            // So sánh kết quả
+            string actual = o.ThayThe(s1, s2, s3);
             Assert.AreEqual(expected, actual);
         }
     }
