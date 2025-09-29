@@ -1,6 +1,5 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using DHKTPM18ATT_Tong_Phuc_Long_TienPhat.program;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 
 namespace DHKTPM18ATT_Tong_Phuc_Long_TienPhat.test
 {
@@ -18,23 +17,30 @@ namespace DHKTPM18ATT_Tong_Phuc_Long_TienPhat.test
         TestMethod]
         public void TestMax()
         {
+            // Tạo đối tượng thư viện
+            MethodLibrary.MethodLibrary m = new MethodLibrary.MethodLibrary();
+
+            // Lấy dữ liệu từ CSV
             int a = Convert.ToInt32(TestContext.DataRow["a"]);
             int b = Convert.ToInt32(TestContext.DataRow["b"]);
             int c = Convert.ToInt32(TestContext.DataRow["c"]);
             string expected = TestContext.DataRow["Expected result"].ToString();
 
+            // Nếu mong đợi exception
             if (expected == "IndexOutOfRangeException")
             {
                 Assert.ThrowsException<IndexOutOfRangeException>(() =>
                 {
-                    Programs.Max(a, b, c);
+                    m.Max(a, b, c);
                 });
             }
             else
             {
+                // Nếu mong đợi giá trị số
                 int expectedValue = Convert.ToInt32(expected);
-                int actual = Programs.Max(a, b, c);
-                Assert.AreEqual(expectedValue, actual);
+                int actual = m.Max(a, b, c);
+                Assert.AreEqual(expectedValue, actual,
+                    $"Test failed with input a={a}, b={b}, c={c}");
             }
         }
     }

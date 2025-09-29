@@ -1,5 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using DHKTPM18ATT_Tong_Phuc_Long_TienPhat.program;
 using System;
 using System.Text;
 
@@ -10,32 +9,32 @@ namespace DHKTPM18ATT_Tong_Phuc_Long_TienPhat.test
     {
         public TestContext TestContext { get; set; }
 
-        [TestMethod]
         [DataSource(
             "Microsoft.VisualStudio.TestTools.DataSource.CSV",
             "|DataDirectory|\\data\\UTLab02.csv",
             "UTLab02#csv",
-            DataAccessMethod.Sequential)]
-        [DeploymentItem("data\\UTLab02.csv")]
+            DataAccessMethod.Sequential),
+        DeploymentItem("data\\UTLab02.csv"),
+        TestMethod]
         public void TestSolveQuadratic()
         {
-            // Đọc dữ liệu từ CSV
+            // Tạo đối tượng thư viện
+            MethodLibrary.MethodLibrary m = new MethodLibrary.MethodLibrary();
+
+            // Lấy dữ liệu từ CSV
             int a = Convert.ToInt32(TestContext.DataRow["a"]);
             int b = Convert.ToInt32(TestContext.DataRow["b"]);
             int c = Convert.ToInt32(TestContext.DataRow["c"]);
 
-            // Trim để tránh lỗi dấu cách / encoding
             string expectedResult = TestContext.DataRow["ExpectedResult"].ToString().Trim();
-
-            // Parse x1,x2 từ CSV
             float expectedX1 = ParseFloat(TestContext.DataRow["x1"].ToString());
             float expectedX2 = ParseFloat(TestContext.DataRow["x2"].ToString());
 
-            // Gọi phương thức giải phương trình
+            // Gọi hàm trong MethodLibrary
             float x1, x2;
-            string actualResult = SolveQuadraticProgram.SolveQuadratic(a, b, c, out x1, out x2).Trim();
+            string actualResult = m.SolveQuadratic(a, b, c, out x1, out x2).Trim();
 
-            // So sánh trạng thái nghiệm (bỏ dấu để tránh lỗi encoding)
+            // So sánh thông báo nghiệm (bỏ dấu để tránh lỗi encoding)
             Assert.AreEqual(
                 RemoveDiacritics(expectedResult),
                 RemoveDiacritics(actualResult),
@@ -44,13 +43,13 @@ namespace DHKTPM18ATT_Tong_Phuc_Long_TienPhat.test
 
             // So sánh nghiệm nếu có
             if (!float.IsNaN(expectedX1))
-                Assert.AreEqual(expectedX1, (float)Math.Round(x1, 2), 0.001, "Sai giá trị x1");
+                Assert.AreEqual(expectedX1, (float)Math.Round(x1, 2), 0.001, $"Sai giá trị x1 với ({a},{b},{c})");
 
             if (!float.IsNaN(expectedX2))
-                Assert.AreEqual(expectedX2, (float)Math.Round(x2, 2), 0.001, "Sai giá trị x2");
+                Assert.AreEqual(expectedX2, (float)Math.Round(x2, 2), 0.001, $"Sai giá trị x2 với ({a},{b},{c})");
         }
 
-        // Hàm helper parse float, NaN nếu chuỗi là "NaN" hoặc lỗi parse
+        // Helper: Parse float từ chuỗi CSV
         private float ParseFloat(string s)
         {
             if (string.IsNullOrWhiteSpace(s) || s.Equals("NaN", StringComparison.OrdinalIgnoreCase))
@@ -59,7 +58,7 @@ namespace DHKTPM18ATT_Tong_Phuc_Long_TienPhat.test
             return float.TryParse(s, out float result) ? result : float.NaN;
         }
 
-        // Hàm bỏ dấu tiếng Việt
+        // Helper: Bỏ dấu tiếng Việt
         private string RemoveDiacritics(string text)
         {
             if (string.IsNullOrEmpty(text)) return text;
