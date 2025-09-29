@@ -27,7 +27,10 @@ namespace DHKTPM18ATT_Tong_Phuc_Long_TienPhat.test
             int p = Convert.ToInt32(TestContext.DataRow["p"]);
             string expected = TestContext.DataRow["ExpectedResult"].ToString();
 
-            string actual = HuyChuoiProgram.HuyChuoi(input, n, p);
+            MethodLibrary.MethodLibrary o = new MethodLibrary.MethodLibrary();
+
+
+            string actual = o.HuyChuoi(input, n, p);
             Assert.AreEqual(expected, actual);
 
         }
