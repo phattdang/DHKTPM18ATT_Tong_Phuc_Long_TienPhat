@@ -40,7 +40,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MethodLibrary">
-      <HintPath>..\IUH\NAM4\KI1\KTPM\btnhommodule02\MethodLibrary.dll</HintPath>
+      <HintPath>..\MethodLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\MSTest.TestFramework.2.2.10\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
@@ -53,14 +53,6 @@
     <Reference Include="System.Data" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="program\HuyChuoi.cs" />
-    <Compile Include="program\Largest.cs" />
-    <Compile Include="program\Max.cs" />
-    <Compile Include="program\QuickSort.cs" />
-    <Compile Include="program\SolveQuadratic.cs" />
-    <Compile Include="program\Sum.cs" />
-    <Compile Include="program\TinhTienDien.cs" />
-    <Compile Include="program\ThayThe.cs" />
     <Compile Include="test\UTLab1.cs" />
     <Compile Include="test\UTLab2.cs" />
     <Compile Include="test\UTLab4.cs" />

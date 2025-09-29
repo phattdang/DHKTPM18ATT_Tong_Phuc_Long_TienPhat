@@ -1,7 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using DHKTPM18ATT_Tong_Phuc_Long_TienPhat.program;
-using System.Globalization;
+
 
 namespace DHKTPM18ATT_Tong_Phuc_Long_TienPhat.test
 {
@@ -19,16 +18,14 @@ namespace DHKTPM18ATT_Tong_Phuc_Long_TienPhat.test
         TestMethod]
         public void TestTinhTienDien()
         {
-           
-            int chiSoCu = int.Parse(TestContext.DataRow[0].ToString().Trim(), CultureInfo.InvariantCulture);
-            int chiSoMoi = int.Parse(TestContext.DataRow[1].ToString().Trim(), CultureInfo.InvariantCulture);
-            double expected = double.Parse(TestContext.DataRow[2].ToString().Trim(), CultureInfo.InvariantCulture);
+            MethodLibrary.MethodLibrary o = new MethodLibrary.MethodLibrary();
+            int chiSoCu, chiSoMoi;
+            chiSoCu = Convert.ToInt32(TestContext.DataRow[0]);
+            chiSoMoi = Convert.ToInt32(TestContext.DataRow[1]);
+            double kq_mongdoi = Convert.ToDouble(TestContext.DataRow[2]);
+            double kq_thucte = o.TinhTienDien(chiSoCu, chiSoMoi);
 
-            var tinhTien = new TinhTienDienClass();
-            double actual = tinhTien.TinhTienDien(chiSoCu, chiSoMoi);
-
-            Assert.AreEqual(expected, actual, 0.1,
-                $"Sai ở case chiSoCu={chiSoCu}, chiSoMoi={chiSoMoi}");
+            Assert.AreEqual(kq_mongdoi, kq_thucte, 0.001);
         }
     }
 }

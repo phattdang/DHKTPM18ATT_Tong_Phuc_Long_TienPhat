@@ -1,0 +1,7 @@
+a,b,c,ExpectedResult,x1,x2
+0,0,0,Vo so nghiem,NaN,NaN
+0,0,10,Vo nghiem,NaN,NaN
+3,3,4,Vo nghiem,NaN,NaN
+0,5,10,Co 1 nghiem,-2,-2
+1,-4,3,Co 2 nghiem phan biet,3,1
+3,6,3,Co nghiem kep,-1,-1
