@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36408.4 d17.14
+VisualStudioVersion = 17.14.36408.4
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DHKTPM18ATT_Tong_Phuc_Long_TienPhat", "DHKTPM18ATT_Tong_Phuc_Long_TienPhat.csproj", "{469B7218-C7F1-4D89-A90A-252F459A5B00}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_16_Tong_Phuc_Long_TienPhat", "01_16_Tong_Phuc_Long_TienPhat.csproj", "{469B7218-C7F1-4D89-A90A-252F459A5B00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

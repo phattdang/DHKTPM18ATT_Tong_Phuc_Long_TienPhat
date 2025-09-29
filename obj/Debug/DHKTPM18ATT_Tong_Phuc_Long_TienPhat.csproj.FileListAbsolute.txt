@@ -111,3 +111,4 @@ D:\HK1_Nam4\dam_Bao_Chat_Luong_Va_Kiem_Thu\DBCL_DanhThue\DHKTPM18ATT_Tong_Phuc_L
 D:\HK1_Nam4\dam_Bao_Chat_Luong_Va_Kiem_Thu\DBCL_DanhThue\DHKTPM18ATT_Tong_Phuc_Long_TienPhat\obj\Debug\DHKTPM18.F81E6996.Up2Date
 D:\HK1_Nam4\dam_Bao_Chat_Luong_Va_Kiem_Thu\DBCL_DanhThue\DHKTPM18ATT_Tong_Phuc_Long_TienPhat\obj\Debug\DHKTPM18ATT_Tong_Phuc_Long_TienPhat.dll
 D:\HK1_Nam4\dam_Bao_Chat_Luong_Va_Kiem_Thu\DBCL_DanhThue\DHKTPM18ATT_Tong_Phuc_Long_TienPhat\obj\Debug\DHKTPM18ATT_Tong_Phuc_Long_TienPhat.pdb
+D:\IUH\NAM4\KI1\KTPM\btnhommodule02\DHKTPM18ATT_Tong_Phuc_Long_TienPhat\bin\Debug\MethodLibrary.dll
